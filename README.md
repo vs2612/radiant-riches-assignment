@@ -1,5 +1,5 @@
 
-# Website Builder Showcase
+# ReactJS Design Internship Assignment
 
 This project is a user interface application built using HTML, CSS, JavaScript, and ReactJS to display various website builders and their features.
 

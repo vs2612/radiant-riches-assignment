@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  display: block;
+  margin-bottom: 2vw;
+  background-color: white;
+  margin-top: 100px;
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vh;
+  height: 20vh;
+  gap: 1vw;
+  margin: 3vw;
+}
+.text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.text span {
+  font-weight: 600;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+.text article {
+  color: rgb(0, 137, 249);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 0.5vw;
+  gap: 0.2vw;
+}
+.text p {
+  width: 75%;
+  line-height: 1.8vw;
+}
+.updatedText {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.updatedText span {
+  font-weight: 600;
+  margin: 1vw;
+}
+.updatedText p {
+  width: 75%;
+  line-height: 1.8vw;
+}
+.updatedText article {
+  color: rgb(0, 137, 249);
+  cursor: pointer;
+  margin-top: 1vw;
+  display: flex;
+  align-items: center;
+  gap: 0.2vw;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  align-self: auto;
+  align-items: normal;
+  position: absolute;
+  top: -4.5%;
+  right: 4%;
+}
+.right4 {
+  display: flex;
+  flex-direction: column;
+  gap: 15vw;
+  position: absolute;
+  top: -2.7%;
+  right: 4%;
+}
+.smallBox {
+  width: 10vw;
+  height: 20vh;
+  background-color: rgb(233, 249, 299);
+  margin-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  font-size: 3vw;
+  color: rgb(96, 138, 180);
+  /* font-weight: bold; */
+  margin-top: 1.5vw;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.feedback img {
+  width: 4vw;
+  height: auto;
+}
+
+.button {
+  margin-bottom: 2vw;
+  padding: 8px 12px;
+  background-color: rgb(54, 150, 247);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.button:hover {
+  background-color: rgb(17, 136, 255);
+  transition: background-color 0.3s ease-in-out;
+}
+.badge {
+  position: absolute;
+  top: -15px;
+  left: -5px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 129, 36); 
+  padding: 5px;
+  font-size: 1.5vw;
+  border-radius: 5px;
+  color: #fff;
+}
+.badge span {
+  margin-left: 5px;
+}
+.index {
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  padding: 1.2vw;
+  position: relative;
+  left: -25px;
+  font-family: "Courier New", Courier, monospace;
+}
+.wrapper {
+  margin-left: 1vw;
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+  background-color: rgb(255, 244, 237);
+  width: 30vw;
+  height: 7vh;
+  border: none;
+  border-radius: 3px;
+}
+
+.number {
+  color: rgb(84, 166, 247);
+  border: 1px solid #ccc;
+  margin-top: 0.1vw;
+  padding: 0.2vw;
+  margin-left: 0.6vw;
+  border: none;
+  background-color: white;
+  border-radius: 2px;
+}
+.love {
+  margin-top: 1vw;
+  display: flex;
+  gap: 0.4vw;
+}
+.backupCont {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .text span {
+    font-size: 1.4vw;
+    font-weight: 500;
+  }
+  .text p {
+    font-size: 1.3vw;
+  }
+  .text article {
+    font-size: 1.4vw;
+  }
+  .updatedText span {
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+  .updatedText p {
+    font-size: 1.4vw;
+  }
+  .updatedText article {
+    font-size: 1.5vw;
+  }
+  .img {
+    height: 17vh;
+    width: 17vw;
+    margin: 0;
+  }
+  .build {
+    font-size: 1.4vw;
+  }
+  .right {
+    gap: 3vw;
+  }
+  .smallBox {
+    height: 15vh;
+    width: 11vw;
+  }
+}
+@media (max-width: 900px) {
+  .right {
+    gap: 2vw;
+  }
+}
+@media (max-width: 830px) {
+  .smallBox {
+    height: 10vh;
+    width: 10vw;
+  }
+  .rating {
+    font-size: 2vw;
+    margin-top: 1vw;
+  }
+  .feedback span {
+    font-size: 1.7vw;
+  }
+  .text span {
+    font-size: 1.6vw;
+    font-weight: 500;
+    line-height: 2vw;
+  }
+  .text p {
+    font-size: 1.5vw;
+  }
+  .text article {
+    font-size: 1.4vw;
+  }
+  .img {
+    height: 15vh;
+    width: 15vw;
+    margin-right: 1.5vw;
+    background-color: black;
+  }
+  .highlights {
+    gap: 0.5vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .backupCont {
+    display: block;
+  }
+  .container {
+    display: none;
+  }
+  .backupCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 65vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 4vw;
+    border-radius: 10px;
+  }
+
+  .carouselContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 2vw;
+  }
+
+  .carimg {
+    margin-top: 2.5vw;
+    max-width: 100%;
+    height: 20vh;
+    background-color: red;
+  }
+  .Carouseltext {
+    text-align: left;
+    padding: 2vw;
+  }
+  .Carouselbuild {
+    margin-top: 1vw;
+    color: #3c3c3c;
+  }
+  .Carouseltext span {
+    font-weight: 500;
+    font-size: 2.5vw;
+  }
+  .Carouseltext article {
+    color: rgb(0, 137, 249);
+    cursor: pointer;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+  }
+  .Carouselrating {
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+    margin-bottom: 0.5vw;
+  }
+  .Carouselbtn {
+    margin-top: 2vw;
+    padding: 8px 12px;
+    background-color: rgb(54, 150, 247);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 70%;
+  }
+  .Carouselbadge {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 129, 36);
+    padding: 5px;
+    font-size: 2.5vw;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
+@media (max-width: 630px) {
+  .Carouseltext span {
+    font-size: 3vw;
+  }
+  .carousel {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 4vw;
+    border-radius: 10px;
+  }
+  .mainHigh {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .Carouseltext span {
+    font-size: 3.1vw;
+  }
+}
+@media (max-width: 500px) {
+  .carousel {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 4vw;
+    border-radius: 10px;
+  }
+  .Carouseltext span {
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 470px) {
+  .carousel {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 4vw;
+    border-radius: 10px;
+  }
+  .Carouseltext span {
+    font-size: 3.8vw;
+  }
+}
+@media (max-width: 470px) {
+  .carousel {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 95vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 4vw;
+    border-radius: 10px;
+  }
+  .Carouseltext span {
+    font-size: 3.8vw;
+  }
+}
+@media (max-width: 378px) {
+  .carousel {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 4vw;
+    border-radius: 10px;
+  }
+  .Carouseltext span {
+    font-size: 4.6vw;
+  }
+}

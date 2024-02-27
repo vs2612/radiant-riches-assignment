@@ -1,0 +1,72 @@
+.signupcont {
+  margin-top: 4vw;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.heading {
+  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  color: rgb(92, 104, 116);
+}
+
+.inputText {
+  border: none;
+  width: 22vw;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 7vh;
+}
+.input button {
+  height: 7vh;
+  width: 9vw;
+  background-color: rgb(27, 136, 244);
+  border: none;
+  color: white;
+  font-size: 1.5vw;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+@media (max-width: 700px) {
+  .signupcont {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .heading {
+    display: flex;
+    flex-direction: row;
+  }
+  .input button {
+    font-size: 2vw;
+    width: 9vw;
+  }
+  .inputText {
+    width: 30vw;
+  }
+}
+@media (max-width: 900px) {
+  .input button {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 500px) {
+  .heading {
+    font-size: 3.5vw;
+  }
+  .input button {
+    font-size: 2vw;
+    width: 12vw;
+  }
+}
+@media (max-width: 450px) {
+  .heading {
+    font-size: 3.5vw;
+  }
+  .input button {
+    font-size: 2.6vw;
+    width: 12vw;
+  }
+}

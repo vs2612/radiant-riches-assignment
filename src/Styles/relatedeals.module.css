@@ -1,0 +1,394 @@
+.mainhead {
+  margin-top: 4vw;
+  font-size: 4.5vw;
+  color: rgb(52, 52, 52);
+  font-weight: 200;
+  margin-left: 1vw;
+}
+.container {
+  margin-top: 6vw;
+  margin-bottom: 4vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 20vw;
+  height: auto;
+  padding: 2vw;
+  border-radius: 10px;
+  gap: 1vw;
+  text-align: start;
+}
+.image {
+  width: 10vw;
+  height: 20vh;
+  margin-left: 2.5vw;
+  align-items: center;
+  justify-content: center;
+  display: inline;
+}
+.quality {
+  display: flex;
+  gap: 0.8vw;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.heading {
+  font-weight: 500;
+  text-align: center;
+  color: rgb(101, 101, 101);
+}
+.quality button {
+  color: rgb(0, 112, 204);
+  border: none;
+  padding: 0.5vw;
+
+  border-radius: 4px;
+}
+.pricing {
+  display: flex;
+  gap: 0.7vw;
+  align-items: center;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+.detail {
+  color: rgb(101, 101, 101);
+}
+.pricing1 {
+  font-weight: 100;
+  font-size: 1.5vw;
+  color: rgb(70, 70, 70);
+}
+.pricing2 {
+  font-size: 1vw;
+  color: rgb(106, 106, 106);
+}
+.pricing3 {
+  color: red;
+  font-size: 1vw;
+}
+.view button {
+  justify-content: center;
+  width: 100%;
+  height: 7vh;
+  background-color: rgb(27, 136, 244);
+  border: none;
+  color: white;
+  font-size: 1.3vw;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.view button:hover {
+  background-color: rgb(18, 120, 255);
+  transition: background-color 0.3s ease-in-out;
+}
+@media (max-width: 750px) {
+  .mainhead {
+    text-align: center;
+  }
+}
+@media (max-width: 950px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 25vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    width: 10vw;
+    margin-left: 2.5vw;
+    height: 20vh;
+  }
+  .pricing1 {
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .pricing2 {
+    font-size: 1.5vw;
+  }
+  .pricing3 {
+    font-size: 1.5vw;
+  }
+  .view button {
+    font-size: 2vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 825px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    width: 10vw;
+    margin-left: 3.7vw;
+    height: 20vh;
+  }
+  .pricing1 {
+    font-weight: 500;
+    font-size: 2.1vw;
+  }
+  .pricing2 {
+    font-size: 1.6vw;
+  }
+  .pricing3 {
+    font-size: 1.6vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    margin-top: 6vw;
+    margin-bottom: 4vw;
+    display: flex;
+    gap: 6vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 45vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    margin-left: 11vw;
+  }
+  .pricing {
+    gap: 2vw;
+    align-items: center;
+  }
+  .pricing1 {
+    font-weight: 500;
+    font-size: 2.5vw;
+  }
+  .pricing2 {
+    font-size: 2vw;
+  }
+  .pricing3 {
+    font-size: 2vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 680px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    margin-left: 12vw;
+  }
+  .pricing1 {
+    font-weight: 500;
+    font-size: 3.1vw;
+  }
+  .pricing2 {
+    font-size: 2.3vw;
+  }
+  .pricing3 {
+    font-size: 2.3vw;
+  }
+  .pricing {
+    gap: 2vw;
+  }
+  .view button {
+    font-size: 2.7vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 600px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 55vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    margin-left: 13vw;
+  }
+  .view button {
+    font-size: 3.2vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 550px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    margin-left: 14.2vw;
+  }
+  .view button {
+    font-size: 3.5vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 480px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 65vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    margin-left: 14.2vw;
+  }
+  .view button {
+    font-size: 3.5vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 450px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 85vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    margin-left: 22vw;
+  }
+  .view button {
+    font-size: 3.5vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+  }
+  .heading {
+    margin-bottom: 1vw;
+    font-size: 3.8vw;
+  }
+  .pricing1 {
+    font-weight: 500;
+    font-size: 4.1vw;
+  }
+  .pricing2 {
+    font-size: 3.3vw;
+  }
+  .pricing3 {
+    font-size: 3.3vw;
+  }
+  .pricing {
+    gap: 2.3vw;
+    margin-bottom: 2vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 400px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 95vw;
+    height: auto;
+    padding: 2vw;
+    border-radius: 10px;
+    gap: 1vw;
+    text-align: start;
+  }
+  .image {
+    margin-left: 28vw;
+  }
+  .view button {
+    font-size: 3.5vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+  .heading {
+    margin-bottom: 1vw;
+    font-size: 3.8vw;
+  }
+  .view button {
+    font-size: 4.5vw;
+  }
+}
+@media (max-width: 390px) {
+  .image {
+    margin-left: 26vw;
+  }
+  .quality button {
+    margin-bottom: 1vw;
+    margin-top: 3vw;
+  }
+}
+
